@@ -1,0 +1,82 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-03-28 12:39 +0200
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 12:39
+Completed NSE at 12:39, 0.00s elapsed
+Initiating NSE at 12:39
+Completed NSE at 12:39, 0.00s elapsed
+Initiating NSE at 12:39
+Completed NSE at 12:39, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 12:39
+Completed Parallel DNS resolution of 1 host. at 12:39, 0.50s elapsed
+Initiating Ping Scan at 12:39
+Scanning testaspnet.vulnweb.com (44.238.29.244) [4 ports]
+Completed Ping Scan at 12:39, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:39
+Completed Parallel DNS resolution of 1 host. at 12:39, 0.44s elapsed
+Initiating SYN Stealth Scan at 12:39
+Scanning testaspnet.vulnweb.com (44.238.29.244) [1000 ports]
+Discovered open port 80/tcp on 44.238.29.244
+Discovered open port 2000/tcp on 44.238.29.244
+Discovered open port 5060/tcp on 44.238.29.244
+Completed SYN Stealth Scan at 12:39, 25.57s elapsed (1000 total ports)
+Initiating Service scan at 12:39
+Scanning 3 services on testaspnet.vulnweb.com (44.238.29.244)
+Service scan Timing: About 66.67% done; ETC: 12:43 (0:01:19 remaining)
+Completed Service scan at 12:42, 163.13s elapsed (3 services on 1 host)
+Initiating OS detection (try #1) against testaspnet.vulnweb.com (44.238.29.244)
+Retrying OS detection (try #2) against testaspnet.vulnweb.com (44.238.29.244)
+Initiating Traceroute at 12:42
+Completed Traceroute at 12:42, 0.96s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 12:42
+Completed Parallel DNS resolution of 2 hosts. at 12:42, 1.53s elapsed
+NSE: Script scanning 44.238.29.244.
+Initiating NSE at 12:42
+Completed NSE at 12:43, 34.94s elapsed
+Initiating NSE at 12:43
+Completed NSE at 12:43, 4.17s elapsed
+Initiating NSE at 12:43
+Completed NSE at 12:43, 0.00s elapsed
+Nmap scan report for testaspnet.vulnweb.com (44.238.29.244)
+Host is up (0.28s latency).
+rDNS record for 44.238.29.244: ec2-44-238-29-244.us-west-2.compute.amazonaws.com
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE  SERVICE     VERSION
+80/tcp   open   http        Microsoft IIS httpd 8.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/8.5
+|_http-favicon: Unknown favicon MD5: 50C42A3EDAAA2FA00445AC77F1B1A715
+|_http-title: acublog news
+113/tcp  closed ident
+2000/tcp open   cisco-sccp?
+5060/tcp open   sip?
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2012|2008|7 (92%)
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (92%), Microsoft Windows 7 or Windows Server 2008 R2 (88%), Microsoft Windows Server 2008 R2 or Windows 7 SP1 (88%), Microsoft Windows Server 2008 R2 SP1 (86%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 15.897 days (since Thu Mar 12 15:12:32 2026)
+Network Distance: 3 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Randomized
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 113/tcp)
+HOP RTT       ADDRESS
+1   11.00 ms  www.netis.cc (192.168.1.1)
+2   104.00 ms 100.104.0.1
+3   900.00 ms ec2-44-238-29-244.us-west-2.compute.amazonaws.com (44.238.29.244)
+
+NSE: Script Post-scanning.
+Initiating NSE at 12:43
+Completed NSE at 12:43, 0.00s elapsed
+Initiating NSE at 12:43
+Completed NSE at 12:43, 0.00s elapsed
+Initiating NSE at 12:43
+Completed NSE at 12:43, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 244.84 seconds
+           Raw packets sent: 2100 (96.596KB) | Rcvd: 78 (3.802KB)
