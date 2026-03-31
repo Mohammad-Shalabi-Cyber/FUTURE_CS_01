@@ -11,6 +11,7 @@ The scope of this task is a **Black-Box Vulnerability Assessment**. This include
 * **Network Mapping:** Identifying open ports and active services.
 * **Vulnerability Scanning:** Detecting security weaknesses, misconfigurations, and outdated software versions.
 * **Reporting:** Documenting findings with risk levels and recommended fixes.
+* All scanning was performed passively to comply with ethical guidelines and ensure zero impact on target availability
 
 ## 3. Tools Used
 To ensure a comprehensive assessment, the following industry-standard tools were utilized:
